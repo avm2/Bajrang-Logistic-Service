@@ -1,0 +1,130 @@
+/* styles.css */
+:root {
+    --primary-color: #FF6B35;
+    --secondary-color: #4A4E69;
+    --accent-color: #F7C59F;
+    --light-color: #EFEFEF;
+    --dark-color: #2B2D42;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--dark-color);
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+    
+}
+
+.navbar-brand, .nav-link {
+    color: var(--light-color) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.logo {
+    height: 30px; 
+    width: auto; 
+}
+
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1200/600');
+    background-size: cover;
+    background-position: center;
+    color: var(--light-color);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    padding: 100px 0;
+}
+
+
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+
+#services {
+    background-color: var(--light-color);
+}
+
+#philosophy {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+}
+
+#contact {
+    background-color: var(--light-color);
+}
+
+footer {
+    background-color: var(--dark-color);
+}
+
+footer a {
+    color: var(--light-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
+
+.customer-logo {
+    max-width: 70%; /* Reduce the width of the logos */
+    height: auto;
+    max-height: 80px; /* Set a smaller height */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+@media (min-width: 768px) {
+    .customer-logo {
+        max-height: 70px; /* Adjust the logo size on medium screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .customer-logo {
+        max-height: 60px; /* Further reduce size on large screens */
+    }
+}
+
+  
