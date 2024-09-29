@@ -84,6 +84,33 @@ h2 {
     background-color: var(--light-color);
 }
 
+.fixed-card {
+    height: 350px; /* Set a fixed height for the cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-img {
+    height: 150px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure images scale correctly without distorting */
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: var(--dark-color);
+}
+
 #philosophy {
     background-color: var(--accent-color);
     color: var(--dark-color);
