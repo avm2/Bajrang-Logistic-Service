@@ -1,242 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bajrang Logistics Service</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+
+    <style>
+        .hero {
+          background-image: url('./img/bg-4.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 60vh;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+    
+       
+        @media (max-width: 768px) {
+          .hero {
+            height: 60vh;
+            background-image: url('./img/sm_bg-4.jpg');
+           
+          }
+        }
+    
+        @media (max-width: 576px) {
+          .hero {
+            height: 40vh; 
+            background-image: url('./img/sm_bg-4.jpg');
+           
+           
+          }
+          .hero h1 {
+            font-size:2.5rem; 
+          }
+        }
+    
+        .overlay {
+          background-color: rgba(25, 25, 25, 0.5);
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1;
+        }
+    
+        .hero h1{
+          font-weight: 350;
+          position: relative;
+          z-index: 2;
+          color: white;
+        }
+
+        .hero p {
+          font-weight: 400;
+          position: relative;
+          z-index: 2;
+          color: white;
+        }
+
+      </style>
+
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand" href="#home">
-                <img src="/img/Logo.png" alt="Bajrang Logistic Service" class="logo"
-                style="height: 70px;
-                width: auto;
-                margin: auto;
-                ">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Customers">Customers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#philosophy">Philosophy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img
+            src="/img/Logo.png"
+            alt="Bajrang Logistic Service"
+            class="logo"
+            style="height: 70px; width: auto; margin: auto"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Customers">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#philosophy">Philosophy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
-    
 
-    <header id="home" class="hero">
-        <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- First Slide -->
-                <div class="carousel-item active">
-                    <img src="./img/bg-4.jpg" class="d-block w-100" alt="Slide 1" style="opacity: 0.9;">
-                </div>
-                <!-- Second Slide -->
-                <div class="carousel-item">
-                    <img src="./img/bg-5.jpg" class="d-block w-100" alt="Slide 2" style="opacity: 0.9;">
-                </div>
-                <!-- Third Slide -->
-                <div class="carousel-item">
-                    <img src="./img/bg-4.jpg" class="d-block w-100" alt="Slide 3" style="opacity: 0.9;">
-                </div>
-            </div>
-            <!-- Content over the sliding images -->
-            <div class="carousel-caption d-flex flex-column justify-content-center h-100">
-                <h1 class="display-4" style="font-weight: 500; ">We Carry Your Trust</h1>
-                <p class="lead" style="font-weight:450;" >Redefining logistics through innovation, reliability, and exceptional service since 2022.</p>
-                <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
-            </div>
-        </div>
-    </header>
-    
+    <header
+    id="home"
+    class="hero"
+  >
+    <div class="overlay">
+      <div
+        class="container h-100 d-flex flex-column justify-content-center align-items-center text-center"
+      >
+        <h1 class="display-4">We Carry Your Trust</h1>
+        <p class="lead mb-4">
+          Redefining logistics through innovation, reliability, and exceptional
+          service since 2022.
+        </p>
+        <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+      </div>
+    </div>
+  </header>
+  
 
-    
-
-   
-
- 
-    
     <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">About Us</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Welcome to Bajrang Logistic Service, where we redefine logistics through innovation, reliability, and exceptional service. Established in 2022, we have grown from a local logistics provider to a trusted global partner for businesses across diverse industries.</p>
-                </div>
-                <div class="col-md-6">
-                    <p>Our mission is simple: to deliver seamless, efficient, and cost-effective logistics solutions that help our clients achieve their business goals. We believe that logistics is not just about moving goods from one point to another; it's about connecting people, businesses, and communities.</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              Welcome to Bajrang Logistic Service, where we redefine logistics
+              through innovation, reliability, and exceptional service.
+              Established in 2022, we have grown from a local logistics provider
+              to a trusted global partner for businesses across diverse
+              industries.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              Our mission is simple: to deliver seamless, efficient, and
+              cost-effective logistics solutions that help our clients achieve
+              their business goals. We believe that logistics is not just about
+              moving goods from one point to another; it's about connecting
+              people, businesses, and communities.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
- 
     <section id="services" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Our Services</h2>
-            <div class="row">
-                <!-- E-Commerce -->
-                <div class="col-md-3">
-                    <div class="card text-center fixed-card">
-                        <img src="./img/ecommerce.png" class="card-img-top service-img" alt="E-Commerce">
-                        <div class="card-body">
-                            <h4 class="card-title">E-Commerce</h4>
-                            <p class="card-text">Innovative logistics for e-commerce.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Warehousing -->
-                <div class="col-md-3">
-                    <div class="card text-center fixed-card">
-                        <img src="./img/warehouse.png" class="card-img-top service-img" alt="Warehousing">
-                        <div class="card-body">
-                            <h4 class="card-title">Warehousing</h4>
-                            <p class="card-text">Secure and efficient storage solutions.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- TI Works -->
-                <div class="col-md-3">
-                    <div class="card text-center fixed-card">
-                        <img src="./img/IT.jpg" class="card-img-top service-img" alt="TI Works">
-                        <div class="card-body">
-                            <h4 class="card-title">TI Works</h4>
-                            <p class="card-text">Advanced technology integrations.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Kitting and Packaging -->
-                <div class="col-md-3">
-                    <div class="card text-center fixed-card">
-                        <img src="./img/kitting.jpg" class="card-img-top service-img" alt="Kitting and Packaging">
-                        <div class="card-body">
-                            <h4 class="card-title">Kitting and Packaging</h4>
-                            <p class="card-text">Customized packaging solutions.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+          <!-- E-Commerce -->
+          <div class="col-md-3">
+            <div class="card text-center fixed-card">
+              <img
+                src="./img/ecommerce.png"
+                class="card-img-top service-img"
+                alt="E-Commerce"
+              />
+              <div class="card-body">
+                <h4 class="card-title">E-Commerce</h4>
+                <p class="card-text">Innovative logistics for e-commerce.</p>
+              </div>
             </div>
+          </div>
+          <!-- Warehousing -->
+          <div class="col-md-3">
+            <div class="card text-center fixed-card">
+              <img
+                src="./img/warehouse.png"
+                class="card-img-top service-img"
+                alt="Warehousing"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Warehousing</h4>
+                <p class="card-text">Secure and efficient storage solutions.</p>
+              </div>
+            </div>
+          </div>
+          <!-- TI Works -->
+          <div class="col-md-3">
+            <div class="card text-center fixed-card">
+              <img
+                src="./img/IT.jpg"
+                class="card-img-top service-img"
+                alt="TI Works"
+              />
+              <div class="card-body">
+                <h4 class="card-title">TI Works</h4>
+                <p class="card-text">Advanced technology integrations.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Kitting and Packaging -->
+          <div class="col-md-3">
+            <div class="card text-center fixed-card">
+              <img
+                src="./img/kitting.jpg"
+                class="card-img-top service-img"
+                alt="Kitting and Packaging"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Kitting and Packaging</h4>
+                <p class="card-text">Customized packaging solutions.</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    
 
     <section id="Customers" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Our Customers</h2>
-            <div class="row">
-                <!-- Row 1 -->
-                <div class="col-6 col-md-2 text-center mb-4">
-                    <img src="./img/jio.png" class="img-fluid customer-logo" alt="Customer 1">
-                </div>
-                <div class="col-6 col-md-2 text-center mb-4">
-                    <img src="./img//BSNL.jpg" class="img-fluid customer-logo" alt="Customer 2">
-                </div>
-                <div class="col-6 col-md-2 text-center mb-4">
-                    <img src="./img/airtel.jpg" class="img-fluid customer-logo" alt="Customer 3">
-                </div>
-                <div class="col-6 col-md-2 text-center mb-4">
-                    <img src="./img/cms.jpg" class="img-fluid customer-logo" alt="Customer 4">
-                </div>
-                <div class="col-6 col-md-2 text-center mb-4">
-                    <img src="./img/GTL.jpg" class="img-fluid customer-logo" alt="Customer 5">
-                </div>
-    
-                <!-- Row 2 -->
-                <div class="col-6 col-md-2 text-center mb-4">
-                    <img src="./img/Tata.jpg" class="img-fluid customer-logo" alt="Customer 6">
-                </div>
-                <div class="col-6 col-md-2 text-center mb-4">
-                    <img src="./img/caper.jpg"class="img-fluid customer-logo" alt="Customer 7">
-                </div>
-                <div class="col-6 col-md-2 text-center mb-4">
-                    <img src="./img/Frog.jpg"class="img-fluid customer-logo" alt="Customer 8">
-                </div>
-                <div class="col-6 col-md-2 text-center mb-4">
-                    <img src="./img/sky.jpg" class="img-fluid customer-logo" alt="Customer 9">
-                </div>
-                <div class="col-6 col-md-2 text-center mb-4">
-                    <img src="./img/VI.jpg" class="img-fluid customer-logo" alt="Customer 10">
-                </div>
-                <div class="col-6 col-md-2 text-center mb-4">
-                    <img src="./img/DHL.jpg" class="img-fluid customer-logo" alt="Customer 10">
-                </div>
-                <div class="col-6 col-md-2 text-center mb-4">
-                    <img src="./img/tower.jpg" class="img-fluid customer-logo" alt="Customer 10">
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="text-center mb-4">Our Customers</h2>
+        <div class="row">
+          <!-- Row 1 -->
+          <div class="col-6 col-md-2 text-center mb-4">
+            <img
+              src="./img/jio.png"
+              class="img-fluid customer-logo"
+              alt="Customer 1"
+            />
+          </div>
+          <div class="col-6 col-md-2 text-center mb-4">
+            <img
+              src="./img//BSNL.jpg"
+              class="img-fluid customer-logo"
+              alt="Customer 2"
+            />
+          </div>
+          <div class="col-6 col-md-2 text-center mb-4">
+            <img
+              src="./img/airtel.jpg"
+              class="img-fluid customer-logo"
+              alt="Customer 3"
+            />
+          </div>
+          <div class="col-6 col-md-2 text-center mb-4">
+            <img
+              src="./img/cms.jpg"
+              class="img-fluid customer-logo"
+              alt="Customer 4"
+            />
+          </div>
+          <div class="col-6 col-md-2 text-center mb-4">
+            <img
+              src="./img/GTL.jpg"
+              class="img-fluid customer-logo"
+              alt="Customer 5"
+            />
+          </div>
+
+          <!-- Row 2 -->
+          <div class="col-6 col-md-2 text-center mb-4">
+            <img
+              src="./img/Tata.jpg"
+              class="img-fluid customer-logo"
+              alt="Customer 6"
+            />
+          </div>
+          <div class="col-6 col-md-2 text-center mb-4">
+            <img
+              src="./img/caper.jpg"
+              class="img-fluid customer-logo"
+              alt="Customer 7"
+            />
+          </div>
+          <div class="col-6 col-md-2 text-center mb-4">
+            <img
+              src="./img/Frog.jpg"
+              class="img-fluid customer-logo"
+              alt="Customer 8"
+            />
+          </div>
+          <div class="col-6 col-md-2 text-center mb-4">
+            <img
+              src="./img/sky.jpg"
+              class="img-fluid customer-logo"
+              alt="Customer 9"
+            />
+          </div>
+          <div class="col-6 col-md-2 text-center mb-4">
+            <img
+              src="./img/VI.jpg"
+              class="img-fluid customer-logo"
+              alt="Customer 10"
+            />
+          </div>
+          <div class="col-6 col-md-2 text-center mb-4">
+            <img
+              src="./img/DHL.jpg"
+              class="img-fluid customer-logo"
+              alt="Customer 10"
+            />
+          </div>
+          <div class="col-6 col-md-2 text-center mb-4">
+            <img
+              src="./img/tower.jpg"
+              class="img-fluid customer-logo"
+              alt="Customer 10"
+            />
+          </div>
         </div>
+      </div>
     </section>
-    
 
     <section id="philosophy" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Our Philosophy</h2>
-            <div class="row">
-                <div class="col-md-8 mx-auto text-center">
-                    <p class="lead">"We are not just in the business of moving goods; we are in the business of building lasting relationships and enabling success."</p>
-                    <p>At Bajrang Logistic Service, our philosophy is centered around a commitment to excellence, customer satisfaction, and sustainability. We believe in creating value through innovative, reliable, and efficient logistics solutions that empower businesses to thrive in a connected world.</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="text-center mb-4">Our Philosophy</h2>
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+            <p class="lead">
+              "We are not just in the business of moving goods; we are in the
+              business of building lasting relationships and enabling success."
+            </p>
+            <p>
+              At Bajrang Logistic Service, our philosophy is centered around a
+              commitment to excellence, customer satisfaction, and
+              sustainability. We believe in creating value through innovative,
+              reliable, and efficient logistics solutions that empower
+              businesses to thrive in a connected world.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Contact Us</h2>
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email">
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; 2024 Bajrang Logistic Service. All rights reserved.</p>
-            <p>
-                <a href="tel:+919997583413" class="text-white me-3"><i class="fas fa-phone"></i> +91-99975-83413</a>
-                <a href="mailto:logistic.bajrang@gmail.com" class="text-white me-3"><i class="fas fa-envelope"></i> logistic.bajrang@gmail.com</a>
-                <a href="http://www.bajrangservice.com" class="text-white"><i class="fas fa-globe"></i> www.bajrangservice.com</a>
-            </p>
-        </div>
+      <div class="container text-center">
+        <p>&copy; 2024 Bajrang Logistic Service. All rights reserved.</p>
+        <p>
+          <a href="tel:+919997583413" class="text-white me-3"
+            ><i class="fas fa-phone"></i> +91-99975-83413</a
+          >
+          <a href="mailto:logistic.bajrang@gmail.com" class="text-white me-3"
+            ><i class="fas fa-envelope"></i> logistic.bajrang@gmail.com</a
+          >
+          <a href="http://www.bajrangservice.com" class="text-white"
+            ><i class="fas fa-globe"></i> www.bajrangservice.com</a
+          >
+        </p>
+      </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
