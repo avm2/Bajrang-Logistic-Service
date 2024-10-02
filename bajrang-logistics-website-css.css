@@ -26,10 +26,7 @@ body {
     color: var(--accent-color) !important;
 }
 
-.logo {
-    height: 30px; 
-    width: auto; 
-}
+
 
 
 
@@ -55,7 +52,7 @@ h2 {
 }
 
 .fixed-card {
-    height: 350px; 
+    height: 255px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -90,7 +87,12 @@ h2 {
   
   @media (max-width: 576px) {
     .service-img {
-      height: 130px; /* Further adjust for mobile devices */
+      height: 130px
+      
+     
+    }
+    .fixed-card{
+        margin-bottom:10px;
     }
   }
 
