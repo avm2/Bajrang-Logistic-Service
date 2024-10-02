@@ -105,6 +105,8 @@ h2 {
 
 footer {
     background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 20px 0;
 }
 
 footer a {
@@ -116,6 +118,37 @@ footer a {
 footer a:hover {
     color: var(--accent-color);
 }
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    footer p {
+        font-size: 0.9rem; /* Slightly reduce font size */
+        margin-bottom: 10px;
+    }
+
+    footer a {
+        display: block; /* Stack contact details vertically */
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    footer p {
+        font-size: 0.8rem; /* Further reduce font size on mobile devices */
+    }
+
+    footer a {
+        font-size: 0.8rem; /* Reduce size of contact links */
+    }
+}
+
 
 
 .customer-logo {
